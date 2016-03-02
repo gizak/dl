@@ -1,0 +1,32 @@
+{
+  "name": "dl-agent",
+  "version": "1.0.1",
+  "description": "CLI Download utility",
+  "main": "index.js",
+  "dependencies": {
+    "async": "^1.5.2",
+    "chalk": "^1.1.1",
+    "clear": "0.0.1",
+    "commander": "^2.9.0",
+    "jayson": "^2.0.0",
+    "pretty-bytes": "^3.0.1",
+    "progress": "^1.1.8",
+    "sprintf-js": "^1.0.3"
+  },
+  "devDependencies": {
+    "cli-clear": "^1.0.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "jshintConfig": {
+    "esversion": 6
+  },
+  "bin": "index.js",
+  "author": "gizak",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gizak/dl-agent.git"
+  }
+}
