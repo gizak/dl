@@ -1,6 +1,6 @@
 {
   "name": "dl-agent",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "CLI Download utility",
   "main": "index.js",
   "dependencies": {
@@ -10,7 +10,6 @@
     "commander": "^2.9.0",
     "jayson": "^2.0.0",
     "pretty-bytes": "^3.0.1",
-    "progress": "^1.1.8",
     "sprintf-js": "^1.0.3"
   },
   "devDependencies": {
