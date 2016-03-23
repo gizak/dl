@@ -1,6 +1,6 @@
 {
   "name": "dl-agent",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "CLI Download utility",
   "main": "index.js",
   "dependencies": {
@@ -21,7 +21,9 @@
   "jshintConfig": {
     "esversion": 6
   },
-  "bin": "index.js",
+  "bin": {
+    "dl": "./index.js"
+  },
   "author": "gizak",
   "license": "MIT",
   "repository": {
