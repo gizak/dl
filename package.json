@@ -1,6 +1,6 @@
 {
   "name": "dl-agent",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "CLI Download utility",
   "main": "index.js",
   "dependencies": {
