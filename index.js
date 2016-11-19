@@ -15,7 +15,7 @@ let port = 6800;
 let aria = jrpc.client.http("http://localhost:" + port + "/jsonrpc");
 
 prog
-	.version('0.0.1')
+	.version(require('./package.json').version)
 	.usage('[options] [uri...]')
 	.option('-a, --add <uri>', 'Add <uri> as a download task')
 	.option('-r, --rm <id>', 'Remove a task by <id>')
