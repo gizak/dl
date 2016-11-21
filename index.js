@@ -47,11 +47,7 @@ if (prog.add) {
 }
 
 if (prog.deamon) {
-	exec('aria2c --enable-rpc --daemon --quiet --rpc-listen-all', (err) => {
-		if (err !== null) {
-			console.log(`can not initialize aria2: $(err)`);
-		}
-	});
+	handle.initDeamon()
 }
 
 if (prog.rm) {
