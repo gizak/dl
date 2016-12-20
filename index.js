@@ -22,6 +22,8 @@ prog
 	.option('-d, --dir <dir>', 'Specify <dir> for download tasks', "./")
 	.option('-l, --list', 'List all tasks')
 	.option('-D, --deamon', 'Start aria2 deamon')
+	.option('-s, --shutdown', 'Shutdown aria2 deamon')
+	.option('-k, --kill', 'Force terminate aria2 deamon')
 	.option('-v, --verbose', 'Verbose output')
 	.option('-w, --watch', 'Watch status of tasks')
 	.parse(process.argv);
@@ -47,7 +49,15 @@ if (prog.add) {
 }
 
 if (prog.deamon) {
-	handle.initDeamon()
+	handle.initDaemon(()=>{console.log('OK')})
+}
+
+if (prog.shutdown) {
+	handle.shutdown()
+}
+
+if (prog.kill) {
+	handle.forceShutdown()
 }
 
 if (prog.rm) {
